@@ -109,7 +109,10 @@ def inference_mot(model, img, frame_id):
     data = collate([data], samples_per_gpu=1)
     if next(model.parameters()).is_cuda:
         # scatter to specified GPU
-        data = scatter(data, [device])[0]
+        if isinstance(device, torch.device):
+            data = scatter(data, [device.index])[0]    
+        else: 
+            data = scatter(data, [device])[0]
     else:
         for m in model.modules():
             assert not isinstance(

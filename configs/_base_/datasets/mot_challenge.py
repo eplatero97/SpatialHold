@@ -30,21 +30,43 @@ train_pipeline = [
         ]),
     dict(type='SeqDefaultFormatBundle', ref_prefix='ref')
 ]
+
+# default `mot_challenge.py` test pipeline
+# test_pipeline = [
+#     dict(type='LoadImageFromFile'),
+#     dict(
+#         type='MultiScaleFlipAug',
+#         img_scale=(1088, 1088), # original
+#         flip=False,
+#         transforms=[
+#             dict(type='Resize', keep_ratio=True),
+#             dict(type='RandomFlip'),
+#             dict(type='Normalize', **img_norm_cfg),
+#             dict(type='Pad', size_divisor=32),
+#             dict(type='ImageToTensor', keys=['img']),
+#             dict(type='VideoCollect', keys=['img'])
+#         ])
+# ]
+
+# custom pipeline that mimics mmdet's YOLOX test pipeline
 test_pipeline = [
     dict(type='LoadImageFromFile'),
     dict(
         type='MultiScaleFlipAug',
-        img_scale=(1088, 1088),
+        img_scale=(416, 416), # original
         flip=False,
         transforms=[
             dict(type='Resize', keep_ratio=True),
             dict(type='RandomFlip'),
-            dict(type='Normalize', **img_norm_cfg),
-            dict(type='Pad', size_divisor=32),
-            dict(type='ImageToTensor', keys=['img']),
-            dict(type='VideoCollect', keys=['img'])
+            dict(type='Pad', 
+                pad_to_square=True,
+                pad_val=dict(img=(114.0, 114.0, 114.0))),
+            dict(type='VideoCollect', keys=['img']),
+            dict(type='DefaultFormatBundle')
         ])
 ]
+
+
 data_root = 'data/MOT17/'
 data = dict(
     samples_per_gpu=2,

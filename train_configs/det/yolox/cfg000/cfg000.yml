@@ -1,0 +1,10 @@
+# conda activate D:\open-mmlab
+# python D:\Github\mmtracking\mmtracking\tools\det\train_custom_yolox.py --mconfig D:\Github\mmtracking\mmtracking\train_configs\det\yolox\cfg000\cfg000.yml
+
+config: D:\Github\mmtracking\mmtracking\configs\_base_\models\det_format\yolox_s_8x8_300e_custom_coco.py
+work_dir: D:\Github\mmtracking\mmtracking\train_configs\det\yolox\cfg000\logs\
+no_validate: True
+gpu_id: 0
+seed: 37
+deterministic: False
+
