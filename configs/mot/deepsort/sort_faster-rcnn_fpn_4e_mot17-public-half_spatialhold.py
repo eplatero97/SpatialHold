@@ -1,4 +1,4 @@
-_base_ = ['./deepsort_yolox_tiny_8x8_mot17-private-half_v2.py']
+_base_ = ['./sort_faster-rcnn_fpn_4e_mot17-private-half.py']
 model = dict(
     tracker=dict(
         track_association="spatial_hold"

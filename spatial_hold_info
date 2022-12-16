@@ -1,0 +1,2280 @@
+2022-12-05 20:13:38.293 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:321 - input matrix: 
+[[0.05554777 1.         1.         1.         1.         1.
+  1.         1.         1.         1.         1.         1.
+  1.         1.         1.         1.         1.        ]
+ [1.         0.11007404 1.         1.         0.9737177  1.
+  1.         1.         1.         0.9887927  1.         0.99921185
+  1.         1.         1.         1.         1.        ]
+ [1.         1.         1.         0.2145676  1.         1.
+  1.         1.         1.         1.         1.         1.
+  1.         1.         1.         1.         1.        ]
+ [1.         1.         0.04465902 1.         1.         1.
+  1.         1.         0.9579276  1.         1.         1.
+  1.         1.         1.         1.         1.        ]
+ [1.         0.9542155  1.         1.         0.02527481 1.
+  1.         1.         1.         1.         1.         0.94266653
+  1.         1.         1.         1.         1.        ]
+ [1.         1.         1.         1.         1.         1.
+  0.11179394 1.         1.         1.         1.         1.
+  1.         1.         1.         1.         1.        ]
+ [1.         1.         1.         1.         1.         0.08175802
+  1.         1.         1.         1.         1.         1.
+  1.         1.         1.         1.         0.7558739 ]
+ [1.         1.         1.         1.         1.         0.80564195
+  1.         1.         1.         1.         1.         1.
+  1.         0.5142565  1.         1.         0.36114407]
+ [1.         1.         0.95913315 1.         1.         1.
+  1.         0.99443763 0.06134218 1.         1.         1.
+  1.         1.         1.         1.         1.        ]
+ [1.         0.9944599  1.         1.         1.         1.
+  1.         1.         1.         0.12232143 1.         1.
+  1.         1.         1.         1.         1.        ]
+ [1.         1.         1.         1.         1.         1.
+  1.         0.09785807 1.         1.         1.         1.
+  1.         1.         1.         1.         1.        ]
+ [1.         1.         1.         1.         1.         1.
+  1.         1.         1.         1.         0.11062527 1.
+  1.         1.         0.94446814 1.         1.        ]
+ [1.         1.         1.         1.         1.         1.
+  1.         1.         1.         1.         1.         1.
+  1.         0.32366407 1.         1.         0.82975495]
+ [1.         1.         1.         1.         1.         1.
+  1.         1.         1.         1.         0.8870649  1.
+  1.         1.         0.09915471 1.         1.        ]
+ [1.         1.         1.         1.         1.         0.7337195
+  1.         1.         1.         1.         1.         1.
+  1.         0.8319926  1.         1.         0.33111936]
+ [1.         1.         1.         1.         1.         1.
+  1.         1.         1.         1.         1.         1.
+  0.09419155 1.         1.         1.         1.        ]
+ [1.         1.         1.         1.         1.         1.
+  1.         1.         1.         1.         1.         1.
+  1.         1.         1.         0.05497205 1.        ]
+ [1.         1.         1.         1.         1.         1.
+  1.         1.         1.         1.         0.8927261  1.
+  1.         1.         0.7607106  1.         1.        ]]
+2022-12-05 20:13:38.298 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:322 - input matrix shape: 
+(18, 17)
+2022-12-05 20:13:38.299 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 0
+2022-12-05 20:13:38.299 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:361 - PB duplicate indice: 14
+2022-12-05 20:13:38.301 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:365 - PA nodes with duplicate PB node: [13 17]
+2022-12-05 20:13:38.304 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:377 - Input Matrix after conflict ID 0: 
+[[0.05554777 1.         1.         1.         1.         1.
+  1.         1.         1.         1.         1.         1.
+  1.         1.                inf 1.         1.        ]
+ [1.         0.11007404 1.         1.         0.9737177  1.
+  1.         1.         1.         0.9887927  1.         0.99921185
+  1.         1.                inf 1.         1.        ]
+ [1.         1.         1.         0.2145676  1.         1.
+  1.         1.         1.         1.         1.         1.
+  1.         1.                inf 1.         1.        ]
+ [1.         1.         0.04465902 1.         1.         1.
+  1.         1.         0.9579276  1.         1.         1.
+  1.         1.                inf 1.         1.        ]
+ [1.         0.9542155  1.         1.         0.02527481 1.
+  1.         1.         1.         1.         1.         0.94266653
+  1.         1.                inf 1.         1.        ]
+ [1.         1.         1.         1.         1.         1.
+  0.11179394 1.         1.         1.         1.         1.
+  1.         1.                inf 1.         1.        ]
+ [1.         1.         1.         1.         1.         0.08175802
+  1.         1.         1.         1.         1.         1.
+  1.         1.                inf 1.         0.7558739 ]
+ [1.         1.         1.         1.         1.         0.80564195
+  1.         1.         1.         1.         1.         1.
+  1.         0.5142565         inf 1.         0.36114407]
+ [1.         1.         0.95913315 1.         1.         1.
+  1.         0.99443763 0.06134218 1.         1.         1.
+  1.         1.                inf 1.         1.        ]
+ [1.         0.9944599  1.         1.         1.         1.
+  1.         1.         1.         0.12232143 1.         1.
+  1.         1.                inf 1.         1.        ]
+ [1.         1.         1.         1.         1.         1.
+  1.         0.09785807 1.         1.         1.         1.
+  1.         1.                inf 1.         1.        ]
+ [1.         1.         1.         1.         1.         1.
+  1.         1.         1.         1.         0.11062527 1.
+  1.         1.                inf 1.         1.        ]
+ [1.         1.         1.         1.         1.         1.
+  1.         1.         1.         1.         1.         1.
+  1.         0.32366407        inf 1.         0.82975495]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf 0.09915471        inf        inf]
+ [1.         1.         1.         1.         1.         0.7337195
+  1.         1.         1.         1.         1.         1.
+  1.         0.8319926         inf 1.         0.33111936]
+ [1.         1.         1.         1.         1.         1.
+  1.         1.         1.         1.         1.         1.
+  0.09419155 1.                inf 1.         1.        ]
+ [1.         1.         1.         1.         1.         1.
+  1.         1.         1.         1.         1.         1.
+  1.         1.                inf 0.05497205 1.        ]
+ [1.         1.         1.         1.         1.         1.
+  1.         1.         1.         1.         0.8927261  1.
+  1.         1.                inf 1.         1.        ]]
+2022-12-05 20:13:38.304 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 1
+2022-12-05 20:13:38.304 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:361 - PB duplicate indice: 10
+2022-12-05 20:13:38.305 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:365 - PA nodes with duplicate PB node: [11 17]
+2022-12-05 20:13:38.306 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:377 - Input Matrix after conflict ID 1: 
+[[0.05554777 1.         1.         1.         1.         1.
+  1.         1.         1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [1.         0.11007404 1.         1.         0.9737177  1.
+  1.         1.         1.         0.9887927         inf 0.99921185
+  1.         1.                inf 1.         1.        ]
+ [1.         1.         1.         0.2145676  1.         1.
+  1.         1.         1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [1.         1.         0.04465902 1.         1.         1.
+  1.         1.         0.9579276  1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [1.         0.9542155  1.         1.         0.02527481 1.
+  1.         1.         1.         1.                inf 0.94266653
+  1.         1.                inf 1.         1.        ]
+ [1.         1.         1.         1.         1.         1.
+  0.11179394 1.         1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [1.         1.         1.         1.         1.         0.08175802
+  1.         1.         1.         1.                inf 1.
+  1.         1.                inf 1.         0.7558739 ]
+ [1.         1.         1.         1.         1.         0.80564195
+  1.         1.         1.         1.                inf 1.
+  1.         0.5142565         inf 1.         0.36114407]
+ [1.         1.         0.95913315 1.         1.         1.
+  1.         0.99443763 0.06134218 1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [1.         0.9944599  1.         1.         1.         1.
+  1.         1.         1.         0.12232143        inf 1.
+  1.         1.                inf 1.         1.        ]
+ [1.         1.         1.         1.         1.         1.
+  1.         0.09785807 1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf 0.11062527        inf
+         inf        inf        inf        inf        inf]
+ [1.         1.         1.         1.         1.         1.
+  1.         1.         1.         1.                inf 1.
+  1.         0.32366407        inf 1.         0.82975495]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf 0.09915471        inf        inf]
+ [1.         1.         1.         1.         1.         0.7337195
+  1.         1.         1.         1.                inf 1.
+  1.         0.8319926         inf 1.         0.33111936]
+ [1.         1.         1.         1.         1.         1.
+  1.         1.         1.         1.                inf 1.
+  0.09419155 1.                inf 1.         1.        ]
+ [1.         1.         1.         1.         1.         1.
+  1.         1.         1.         1.                inf 1.
+  1.         1.                inf 0.05497205 1.        ]
+ [1.         1.         1.         1.         1.         1.
+  1.         1.         1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]]
+2022-12-05 20:13:38.307 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 2
+2022-12-05 20:13:38.307 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:361 - PB duplicate indice: 0
+2022-12-05 20:13:38.307 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:365 - PA nodes with duplicate PB node: [ 0 17]
+2022-12-05 20:13:38.310 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:377 - Input Matrix after conflict ID 2: 
+[[0.05554777        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf 0.11007404 1.         1.         0.9737177  1.
+  1.         1.         1.         0.9887927         inf 0.99921185
+  1.         1.                inf 1.         1.        ]
+ [       inf 1.         1.         0.2145676  1.         1.
+  1.         1.         1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf 1.         0.04465902 1.         1.         1.
+  1.         1.         0.9579276  1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf 0.9542155  1.         1.         0.02527481 1.
+  1.         1.         1.         1.                inf 0.94266653
+  1.         1.                inf 1.         1.        ]
+ [       inf 1.         1.         1.         1.         1.
+  0.11179394 1.         1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf 1.         1.         1.         1.         0.08175802
+  1.         1.         1.         1.                inf 1.
+  1.         1.                inf 1.         0.7558739 ]
+ [       inf 1.         1.         1.         1.         0.80564195
+  1.         1.         1.         1.                inf 1.
+  1.         0.5142565         inf 1.         0.36114407]
+ [       inf 1.         0.95913315 1.         1.         1.
+  1.         0.99443763 0.06134218 1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf 0.9944599  1.         1.         1.         1.
+  1.         1.         1.         0.12232143        inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf 1.         1.         1.         1.         1.
+  1.         0.09785807 1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf 0.11062527        inf
+         inf        inf        inf        inf        inf]
+ [       inf 1.         1.         1.         1.         1.
+  1.         1.         1.         1.                inf 1.
+  1.         0.32366407        inf 1.         0.82975495]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf 0.09915471        inf        inf]
+ [       inf 1.         1.         1.         1.         0.7337195
+  1.         1.         1.         1.                inf 1.
+  1.         0.8319926         inf 1.         0.33111936]
+ [       inf 1.         1.         1.         1.         1.
+  1.         1.         1.         1.                inf 1.
+  0.09419155 1.                inf 1.         1.        ]
+ [       inf 1.         1.         1.         1.         1.
+  1.         1.         1.         1.                inf 1.
+  1.         1.                inf 0.05497205 1.        ]
+ [       inf 1.         1.         1.         1.         1.
+  1.         1.         1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]]
+2022-12-05 20:13:38.311 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 3
+2022-12-05 20:13:38.311 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:361 - PB duplicate indice: 1
+2022-12-05 20:13:38.311 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:365 - PA nodes with duplicate PB node: [ 1 17]
+2022-12-05 20:13:38.315 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:377 - Input Matrix after conflict ID 3: 
+[[0.05554777        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf 0.11007404        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf 1.         0.2145676  1.         1.
+  1.         1.         1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf 0.04465902 1.         1.         1.
+  1.         1.         0.9579276  1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf 1.         1.         0.02527481 1.
+  1.         1.         1.         1.                inf 0.94266653
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf 1.         1.         1.         1.
+  0.11179394 1.         1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf 1.         1.         1.         0.08175802
+  1.         1.         1.         1.                inf 1.
+  1.         1.                inf 1.         0.7558739 ]
+ [       inf        inf 1.         1.         1.         0.80564195
+  1.         1.         1.         1.                inf 1.
+  1.         0.5142565         inf 1.         0.36114407]
+ [       inf        inf 0.95913315 1.         1.         1.
+  1.         0.99443763 0.06134218 1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf 1.         1.         1.         1.
+  1.         1.         1.         0.12232143        inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf 1.         1.         1.         1.
+  1.         0.09785807 1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf 0.11062527        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf 1.         1.         1.         1.
+  1.         1.         1.         1.                inf 1.
+  1.         0.32366407        inf 1.         0.82975495]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf 0.09915471        inf        inf]
+ [       inf        inf 1.         1.         1.         0.7337195
+  1.         1.         1.         1.                inf 1.
+  1.         0.8319926         inf 1.         0.33111936]
+ [       inf        inf 1.         1.         1.         1.
+  1.         1.         1.         1.                inf 1.
+  0.09419155 1.                inf 1.         1.        ]
+ [       inf        inf 1.         1.         1.         1.
+  1.         1.         1.         1.                inf 1.
+  1.         1.                inf 0.05497205 1.        ]
+ [       inf        inf 1.         1.         1.         1.
+  1.         1.         1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]]
+2022-12-05 20:13:38.315 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 4
+2022-12-05 20:13:38.316 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:361 - PB duplicate indice: 2
+2022-12-05 20:13:38.316 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:365 - PA nodes with duplicate PB node: [ 3 17]
+2022-12-05 20:13:38.320 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:377 - Input Matrix after conflict ID 4: 
+[[0.05554777        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf 0.11007404        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf 0.2145676  1.         1.
+  1.         1.         1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf 0.04465902        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf 1.         0.02527481 1.
+  1.         1.         1.         1.                inf 0.94266653
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf        inf 1.         1.         1.
+  0.11179394 1.         1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf        inf 1.         1.         0.08175802
+  1.         1.         1.         1.                inf 1.
+  1.         1.                inf 1.         0.7558739 ]
+ [       inf        inf        inf 1.         1.         0.80564195
+  1.         1.         1.         1.                inf 1.
+  1.         0.5142565         inf 1.         0.36114407]
+ [       inf        inf        inf 1.         1.         1.
+  1.         0.99443763 0.06134218 1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf        inf 1.         1.         1.
+  1.         1.         1.         0.12232143        inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf        inf 1.         1.         1.
+  1.         0.09785807 1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf 0.11062527        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf 1.         1.         1.
+  1.         1.         1.         1.                inf 1.
+  1.         0.32366407        inf 1.         0.82975495]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf 0.09915471        inf        inf]
+ [       inf        inf        inf 1.         1.         0.7337195
+  1.         1.         1.         1.                inf 1.
+  1.         0.8319926         inf 1.         0.33111936]
+ [       inf        inf        inf 1.         1.         1.
+  1.         1.         1.         1.                inf 1.
+  0.09419155 1.                inf 1.         1.        ]
+ [       inf        inf        inf 1.         1.         1.
+  1.         1.         1.         1.                inf 1.
+  1.         1.                inf 0.05497205 1.        ]
+ [       inf        inf        inf 1.         1.         1.
+  1.         1.         1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]]
+2022-12-05 20:13:38.321 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 5
+2022-12-05 20:13:38.321 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:361 - PB duplicate indice: 3
+2022-12-05 20:13:38.321 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:365 - PA nodes with duplicate PB node: [ 2 17]
+2022-12-05 20:13:38.327 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:377 - Input Matrix after conflict ID 5: 
+[[0.05554777        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf 0.11007404        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf 0.2145676         inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf 0.04465902        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf 0.02527481 1.
+  1.         1.         1.         1.                inf 0.94266653
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf 1.         1.
+  0.11179394 1.         1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf 1.         0.08175802
+  1.         1.         1.         1.                inf 1.
+  1.         1.                inf 1.         0.7558739 ]
+ [       inf        inf        inf        inf 1.         0.80564195
+  1.         1.         1.         1.                inf 1.
+  1.         0.5142565         inf 1.         0.36114407]
+ [       inf        inf        inf        inf 1.         1.
+  1.         0.99443763 0.06134218 1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf 1.         1.
+  1.         1.         1.         0.12232143        inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf 1.         1.
+  1.         0.09785807 1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf 0.11062527        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf 1.         1.
+  1.         1.         1.         1.                inf 1.
+  1.         0.32366407        inf 1.         0.82975495]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf 0.09915471        inf        inf]
+ [       inf        inf        inf        inf 1.         0.7337195
+  1.         1.         1.         1.                inf 1.
+  1.         0.8319926         inf 1.         0.33111936]
+ [       inf        inf        inf        inf 1.         1.
+  1.         1.         1.         1.                inf 1.
+  0.09419155 1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf 1.         1.
+  1.         1.         1.         1.                inf 1.
+  1.         1.                inf 0.05497205 1.        ]
+ [       inf        inf        inf        inf 1.         1.
+  1.         1.         1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]]
+2022-12-05 20:13:38.327 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 6
+2022-12-05 20:13:38.327 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:361 - PB duplicate indice: 4
+2022-12-05 20:13:38.328 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:365 - PA nodes with duplicate PB node: [ 4 17]
+2022-12-05 20:13:38.333 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:377 - Input Matrix after conflict ID 6: 
+[[0.05554777        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf 0.11007404        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf 0.2145676         inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf 0.04465902        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf 0.02527481        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf 1.
+  0.11179394 1.         1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf        inf 0.08175802
+  1.         1.         1.         1.                inf 1.
+  1.         1.                inf 1.         0.7558739 ]
+ [       inf        inf        inf        inf        inf 0.80564195
+  1.         1.         1.         1.                inf 1.
+  1.         0.5142565         inf 1.         0.36114407]
+ [       inf        inf        inf        inf        inf 1.
+  1.         0.99443763 0.06134218 1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf        inf 1.
+  1.         1.         1.         0.12232143        inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf        inf 1.
+  1.         0.09785807 1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf 0.11062527        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf 1.
+  1.         1.         1.         1.                inf 1.
+  1.         0.32366407        inf 1.         0.82975495]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf 0.09915471        inf        inf]
+ [       inf        inf        inf        inf        inf 0.7337195
+  1.         1.         1.         1.                inf 1.
+  1.         0.8319926         inf 1.         0.33111936]
+ [       inf        inf        inf        inf        inf 1.
+  1.         1.         1.         1.                inf 1.
+  0.09419155 1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf        inf 1.
+  1.         1.         1.         1.                inf 1.
+  1.         1.                inf 0.05497205 1.        ]
+ [       inf        inf        inf        inf        inf 1.
+  1.         1.         1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]]
+2022-12-05 20:13:38.333 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 7
+2022-12-05 20:13:38.334 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:361 - PB duplicate indice: 5
+2022-12-05 20:13:38.334 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:365 - PA nodes with duplicate PB node: [ 6 17]
+2022-12-05 20:13:38.340 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:377 - Input Matrix after conflict ID 7: 
+[[0.05554777        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf 0.11007404        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf 0.2145676         inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf 0.04465902        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf 0.02527481        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+  0.11179394 1.         1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf        inf 0.08175802
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+  1.         1.         1.         1.                inf 1.
+  1.         0.5142565         inf 1.         0.36114407]
+ [       inf        inf        inf        inf        inf        inf
+  1.         0.99443763 0.06134218 1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf        inf        inf
+  1.         1.         1.         0.12232143        inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf        inf        inf
+  1.         0.09785807 1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf 0.11062527        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+  1.         1.         1.         1.                inf 1.
+  1.         0.32366407        inf 1.         0.82975495]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf 0.09915471        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+  1.         1.         1.         1.                inf 1.
+  1.         0.8319926         inf 1.         0.33111936]
+ [       inf        inf        inf        inf        inf        inf
+  1.         1.         1.         1.                inf 1.
+  0.09419155 1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf        inf        inf
+  1.         1.         1.         1.                inf 1.
+  1.         1.                inf 0.05497205 1.        ]
+ [       inf        inf        inf        inf        inf        inf
+  1.         1.         1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]]
+2022-12-05 20:13:38.341 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 8
+2022-12-05 20:13:38.341 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:361 - PB duplicate indice: 6
+2022-12-05 20:13:38.341 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:365 - PA nodes with duplicate PB node: [ 5 17]
+2022-12-05 20:13:38.346 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:377 - Input Matrix after conflict ID 8: 
+[[0.05554777        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf 0.11007404        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf 0.2145676         inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf 0.04465902        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf 0.02527481        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+  0.11179394        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf 0.08175802
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf 1.         1.         1.                inf 1.
+  1.         0.5142565         inf 1.         0.36114407]
+ [       inf        inf        inf        inf        inf        inf
+         inf 0.99443763 0.06134218 1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf        inf        inf
+         inf 1.         1.         0.12232143        inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf        inf        inf
+         inf 0.09785807 1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf 0.11062527        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf 1.         1.         1.                inf 1.
+  1.         0.32366407        inf 1.         0.82975495]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf 0.09915471        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf 1.         1.         1.                inf 1.
+  1.         0.8319926         inf 1.         0.33111936]
+ [       inf        inf        inf        inf        inf        inf
+         inf 1.         1.         1.                inf 1.
+  0.09419155 1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf        inf        inf
+         inf 1.         1.         1.                inf 1.
+  1.         1.                inf 0.05497205 1.        ]
+ [       inf        inf        inf        inf        inf        inf
+         inf 1.         1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]]
+2022-12-05 20:13:38.347 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 9
+2022-12-05 20:13:38.347 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:361 - PB duplicate indice: 7
+2022-12-05 20:13:38.348 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:365 - PA nodes with duplicate PB node: [10 17]
+2022-12-05 20:13:38.354 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:377 - Input Matrix after conflict ID 9: 
+[[0.05554777        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf 0.11007404        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf 0.2145676         inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf 0.04465902        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf 0.02527481        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+  0.11179394        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf 0.08175802
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf 1.         1.                inf 1.
+  1.         0.5142565         inf 1.         0.36114407]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf 0.06134218 1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf 1.         0.12232143        inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf        inf        inf
+         inf 0.09785807        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf 0.11062527        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf 1.         1.                inf 1.
+  1.         0.32366407        inf 1.         0.82975495]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf 0.09915471        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf 1.         1.                inf 1.
+  1.         0.8319926         inf 1.         0.33111936]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf 1.         1.                inf 1.
+  0.09419155 1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf 1.         1.                inf 1.
+  1.         1.                inf 0.05497205 1.        ]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf 1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]]
+2022-12-05 20:13:38.354 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 10
+2022-12-05 20:13:38.354 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:361 - PB duplicate indice: 8
+2022-12-05 20:13:38.355 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:365 - PA nodes with duplicate PB node: [ 8 17]
+2022-12-05 20:13:38.358 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:377 - Input Matrix after conflict ID 10: 
+[[0.05554777        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf 0.11007404        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf 0.2145676         inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf 0.04465902        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf 0.02527481        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+  0.11179394        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf 0.08175802
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf 1.                inf 1.
+  1.         0.5142565         inf 1.         0.36114407]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf 0.06134218        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf 0.12232143        inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf        inf        inf
+         inf 0.09785807        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf 0.11062527        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf 1.                inf 1.
+  1.         0.32366407        inf 1.         0.82975495]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf 0.09915471        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf 1.                inf 1.
+  1.         0.8319926         inf 1.         0.33111936]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf 1.                inf 1.
+  0.09419155 1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf 1.                inf 1.
+  1.         1.                inf 0.05497205 1.        ]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf 1.                inf 1.
+  1.         1.                inf 1.         1.        ]]
+2022-12-05 20:13:38.359 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 11
+2022-12-05 20:13:38.359 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:361 - PB duplicate indice: 9
+2022-12-05 20:13:38.360 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:365 - PA nodes with duplicate PB node: [ 9 17]
+2022-12-05 20:13:38.364 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:377 - Input Matrix after conflict ID 11: 
+[[0.05554777        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf 0.11007404        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf 0.2145676         inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf 0.04465902        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf 0.02527481        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+  0.11179394        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf 0.08175802
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf 1.
+  1.         0.5142565         inf 1.         0.36114407]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf 0.06134218        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf 0.12232143        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf 0.09785807        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf 0.11062527        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf 1.
+  1.         0.32366407        inf 1.         0.82975495]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf 0.09915471        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf 1.
+  1.         0.8319926         inf 1.         0.33111936]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf 1.
+  0.09419155 1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf 1.
+  1.         1.                inf 0.05497205 1.        ]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf 1.
+  1.         1.                inf 1.         1.        ]]
+2022-12-05 20:13:38.365 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 12
+2022-12-05 20:13:38.366 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:361 - PB duplicate indice: 16
+2022-12-05 20:13:38.366 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:365 - PA nodes with duplicate PB node: [ 7 14]
+2022-12-05 20:13:38.370 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:377 - Input Matrix after conflict ID 12: 
+[[0.05554777        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf 0.11007404        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf 0.2145676         inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf 0.04465902        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf 0.02527481        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+  0.11179394        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf 0.08175802
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf 1.
+  1.         0.5142565         inf 1.                inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf 0.06134218        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf 0.12232143        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf 0.09785807        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf 0.11062527        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf 1.
+  1.         0.32366407        inf 1.                inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf 0.09915471        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf 0.33111936]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf 1.
+  0.09419155 1.                inf 1.                inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf 1.
+  1.         1.                inf 0.05497205        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf 1.
+  1.         1.                inf 1.                inf]]
+2022-12-05 20:13:38.370 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 13
+2022-12-05 20:13:38.371 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:361 - PB duplicate indice: 13
+2022-12-05 20:13:38.371 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:365 - PA nodes with duplicate PB node: [ 7 12]
+2022-12-05 20:13:38.376 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:377 - Input Matrix after conflict ID 13: 
+[[0.05554777        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf 0.11007404        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf 0.2145676         inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf 0.04465902        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf 0.02527481        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+  0.11179394        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf 0.08175802
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf 1.
+  1.                inf        inf 1.                inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf 0.06134218        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf 0.12232143        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf 0.09785807        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf 0.11062527        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf 0.32366407        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf 0.09915471        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf 0.33111936]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf 1.
+  0.09419155        inf        inf 1.                inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf 1.
+  1.                inf        inf 0.05497205        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf 1.
+  1.                inf        inf 1.                inf]]
+2022-12-05 20:13:38.376 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 14
+2022-12-05 20:13:38.376 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:361 - PB duplicate indice: 11
+2022-12-05 20:13:38.377 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:365 - PA nodes with duplicate PB node: [ 7 17]
+2022-12-05 20:13:38.382 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:377 - Input Matrix after conflict ID 14: 
+[[0.05554777        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf 0.11007404        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf 0.2145676         inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf 0.04465902        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf 0.02527481        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+  0.11179394        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf 0.08175802
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+  1.                inf        inf 1.                inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf 0.06134218        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf 0.12232143        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf 0.09785807        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf 0.11062527        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf 0.32366407        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf 0.09915471        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf 0.33111936]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+  0.09419155        inf        inf 1.                inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+  1.                inf        inf 0.05497205        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf 1.
+         inf        inf        inf        inf        inf]]
+2022-12-05 20:13:38.383 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 15
+2022-12-05 20:13:38.383 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:361 - PB duplicate indice: 12
+2022-12-05 20:13:38.383 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:365 - PA nodes with duplicate PB node: [ 7 15]
+2022-12-05 20:13:38.389 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:377 - Input Matrix after conflict ID 15: 
+[[0.05554777        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf 0.11007404        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf 0.2145676         inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf 0.04465902        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf 0.02527481        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+  0.11179394        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf 0.08175802
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf 1.                inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf 0.06134218        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf 0.12232143        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf 0.09785807        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf 0.11062527        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf 0.32366407        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf 0.09915471        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf 0.33111936]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+  0.09419155        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf 0.05497205        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf 1.
+         inf        inf        inf        inf        inf]]
+2022-12-05 20:13:38.390 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 16
+2022-12-05 20:13:38.390 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:361 - PB duplicate indice: 15
+2022-12-05 20:13:38.391 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:365 - PA nodes with duplicate PB node: [ 7 16]
+2022-12-05 20:13:38.397 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:377 - Input Matrix after conflict ID 16: 
+[[0.05554777        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf 0.11007404        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf 0.2145676         inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf 0.04465902        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf 0.02527481        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+  0.11179394        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf 0.08175802
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf 0.06134218        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf 0.12232143        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf 0.09785807        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf 0.11062527        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf 0.32366407        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf 0.09915471        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf 0.33111936]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+  0.09419155        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf 0.05497205        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf 1.
+         inf        inf        inf        inf        inf]]
+2022-12-05 20:13:38.397 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 17
+2022-12-05 20:13:38.397 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:351 - we have paired 17 nodes from partition A to partition B. As such, we have reached our limit of pairs since minimum dim of matrix is 17
+2022-12-05 20:13:39.017 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:321 - input matrix: 
+[[1. 1. 1.]]
+2022-12-05 20:13:39.017 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:322 - input matrix shape: 
+(1, 3)
+2022-12-05 20:13:39.589 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:321 - input matrix: 
+[[1.         1.        ]
+ [1.         0.7617054 ]
+ [1.         0.16054016]]
+2022-12-05 20:13:39.589 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:322 - input matrix shape: 
+(3, 2)
+2022-12-05 20:13:39.589 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 0
+2022-12-05 20:13:39.589 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:361 - PB duplicate indice: 1
+2022-12-05 20:13:39.590 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:365 - PA nodes with duplicate PB node: [1 2]
+2022-12-05 20:13:39.590 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:377 - Input Matrix after conflict ID 0: 
+[[1.                inf]
+ [1.                inf]
+ [       inf 0.16054016]]
+2022-12-05 20:13:39.591 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 1
+2022-12-05 20:13:39.591 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:361 - PB duplicate indice: 0
+2022-12-05 20:13:39.591 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:365 - PA nodes with duplicate PB node: [0 1]
+2022-12-05 20:13:39.592 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:377 - Input Matrix after conflict ID 1: 
+[[1.                inf]
+ [       inf        inf]
+ [       inf 0.16054016]]
+2022-12-05 20:13:39.592 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 2
+2022-12-05 20:13:39.592 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:351 - we have paired 2 nodes from partition A to partition B. As such, we have reached our limit of pairs since minimum dim of matrix is 2
+2022-12-05 20:13:40.159 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:321 - input matrix: 
+[[1.         1.        ]
+ [1.         1.        ]
+ [0.11607796 1.        ]]
+2022-12-05 20:13:40.159 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:322 - input matrix shape: 
+(3, 2)
+2022-12-05 20:13:40.160 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 0
+2022-12-05 20:13:40.160 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:361 - PB duplicate indice: 0
+2022-12-05 20:13:40.160 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:365 - PA nodes with duplicate PB node: [0 1 2]
+2022-12-05 20:13:40.161 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:377 - Input Matrix after conflict ID 0: 
+[[       inf 1.        ]
+ [       inf 1.        ]
+ [0.11607796        inf]]
+2022-12-05 20:13:40.161 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 1
+2022-12-05 20:13:40.161 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:361 - PB duplicate indice: 1
+2022-12-05 20:13:40.162 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:365 - PA nodes with duplicate PB node: [0 1]
+2022-12-05 20:13:40.162 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:377 - Input Matrix after conflict ID 1: 
+[[       inf 1.        ]
+ [       inf        inf]
+ [0.11607796        inf]]
+2022-12-05 20:13:40.163 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 2
+2022-12-05 20:13:40.163 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:351 - we have paired 2 nodes from partition A to partition B. As such, we have reached our limit of pairs since minimum dim of matrix is 2
+2022-12-05 20:13:40.747 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:321 - input matrix: 
+[[1.]
+ [1.]]
+2022-12-05 20:13:40.747 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:322 - input matrix shape: 
+(2, 1)
+2022-12-05 20:13:40.747 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 0
+2022-12-05 20:13:40.747 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:361 - PB duplicate indice: 0
+2022-12-05 20:13:40.748 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:365 - PA nodes with duplicate PB node: [0 1]
+2022-12-05 20:13:40.748 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:377 - Input Matrix after conflict ID 0: 
+[[ 1.]
+ [inf]]
+2022-12-05 20:13:40.748 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 1
+2022-12-05 20:13:40.748 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:351 - we have paired 1 nodes from partition A to partition B. As such, we have reached our limit of pairs since minimum dim of matrix is 1
+2022-12-05 20:13:41.290 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:321 - input matrix: 
+[[1.        ]
+ [1.        ]
+ [0.02224886]]
+2022-12-05 20:13:41.290 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:322 - input matrix shape: 
+(3, 1)
+2022-12-05 20:13:41.291 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 0
+2022-12-05 20:13:41.291 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:361 - PB duplicate indice: 0
+2022-12-05 20:13:41.291 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:365 - PA nodes with duplicate PB node: [0 1 2]
+2022-12-05 20:13:41.292 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:377 - Input Matrix after conflict ID 0: 
+[[       inf]
+ [       inf]
+ [0.02224886]]
+2022-12-05 20:13:41.292 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 1
+2022-12-05 20:13:41.292 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:351 - we have paired 1 nodes from partition A to partition B. As such, we have reached our limit of pairs since minimum dim of matrix is 1
+2022-12-05 20:13:42.400 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:321 - input matrix: 
+[[1.        ]
+ [1.        ]
+ [0.07502198]]
+2022-12-05 20:13:42.400 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:322 - input matrix shape: 
+(3, 1)
+2022-12-05 20:13:42.400 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 0
+2022-12-05 20:13:42.400 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:361 - PB duplicate indice: 0
+2022-12-05 20:13:42.401 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:365 - PA nodes with duplicate PB node: [0 1 2]
+2022-12-05 20:13:42.401 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:377 - Input Matrix after conflict ID 0: 
+[[       inf]
+ [       inf]
+ [0.07502198]]
+2022-12-05 20:13:42.402 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 1
+2022-12-05 20:13:42.402 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:351 - we have paired 1 nodes from partition A to partition B. As such, we have reached our limit of pairs since minimum dim of matrix is 1
+2022-12-05 20:13:43.475 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:321 - input matrix: 
+[]
+2022-12-05 20:13:43.475 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:322 - input matrix shape: 
+(2, 0)
+2022-12-05 20:15:12.504 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:321 - input matrix: 
+[[0.05554777 1.         1.         1.         1.         1.
+  1.         1.         1.         1.         1.         1.
+  1.         1.         1.         1.         1.        ]
+ [1.         0.11007404 1.         1.         0.9737177  1.
+  1.         1.         1.         0.9887927  1.         0.99921185
+  1.         1.         1.         1.         1.        ]
+ [1.         1.         1.         0.2145676  1.         1.
+  1.         1.         1.         1.         1.         1.
+  1.         1.         1.         1.         1.        ]
+ [1.         1.         0.04465902 1.         1.         1.
+  1.         1.         0.9579276  1.         1.         1.
+  1.         1.         1.         1.         1.        ]
+ [1.         0.9542155  1.         1.         0.02527481 1.
+  1.         1.         1.         1.         1.         0.94266653
+  1.         1.         1.         1.         1.        ]
+ [1.         1.         1.         1.         1.         1.
+  0.11179394 1.         1.         1.         1.         1.
+  1.         1.         1.         1.         1.        ]
+ [1.         1.         1.         1.         1.         0.08175802
+  1.         1.         1.         1.         1.         1.
+  1.         1.         1.         1.         0.7558739 ]
+ [1.         1.         1.         1.         1.         0.80564195
+  1.         1.         1.         1.         1.         1.
+  1.         0.5142565  1.         1.         0.36114407]
+ [1.         1.         0.95913315 1.         1.         1.
+  1.         0.99443763 0.06134218 1.         1.         1.
+  1.         1.         1.         1.         1.        ]
+ [1.         0.9944599  1.         1.         1.         1.
+  1.         1.         1.         0.12232143 1.         1.
+  1.         1.         1.         1.         1.        ]
+ [1.         1.         1.         1.         1.         1.
+  1.         0.09785807 1.         1.         1.         1.
+  1.         1.         1.         1.         1.        ]
+ [1.         1.         1.         1.         1.         1.
+  1.         1.         1.         1.         0.11062527 1.
+  1.         1.         0.94446814 1.         1.        ]
+ [1.         1.         1.         1.         1.         1.
+  1.         1.         1.         1.         1.         1.
+  1.         0.32366407 1.         1.         0.82975495]
+ [1.         1.         1.         1.         1.         1.
+  1.         1.         1.         1.         0.8870649  1.
+  1.         1.         0.09915471 1.         1.        ]
+ [1.         1.         1.         1.         1.         0.7337195
+  1.         1.         1.         1.         1.         1.
+  1.         0.8319926  1.         1.         0.33111936]
+ [1.         1.         1.         1.         1.         1.
+  1.         1.         1.         1.         1.         1.
+  0.09419155 1.         1.         1.         1.        ]
+ [1.         1.         1.         1.         1.         1.
+  1.         1.         1.         1.         1.         1.
+  1.         1.         1.         0.05497205 1.        ]
+ [1.         1.         1.         1.         1.         1.
+  1.         1.         1.         1.         0.8927261  1.
+  1.         1.         0.7607106  1.         1.        ]]
+2022-12-05 20:15:12.515 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:322 - input matrix shape: 
+(18, 17)
+2022-12-05 20:15:12.516 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 0
+2022-12-05 20:15:12.516 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:361 - PB duplicate indice: 14
+2022-12-05 20:15:12.516 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:365 - PA nodes with duplicate PB node: [13 17]
+2022-12-05 20:15:12.519 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:377 - Input Matrix after conflict ID 0: 
+[[0.05554777 1.         1.         1.         1.         1.
+  1.         1.         1.         1.         1.         1.
+  1.         1.                inf 1.         1.        ]
+ [1.         0.11007404 1.         1.         0.9737177  1.
+  1.         1.         1.         0.9887927  1.         0.99921185
+  1.         1.                inf 1.         1.        ]
+ [1.         1.         1.         0.2145676  1.         1.
+  1.         1.         1.         1.         1.         1.
+  1.         1.                inf 1.         1.        ]
+ [1.         1.         0.04465902 1.         1.         1.
+  1.         1.         0.9579276  1.         1.         1.
+  1.         1.                inf 1.         1.        ]
+ [1.         0.9542155  1.         1.         0.02527481 1.
+  1.         1.         1.         1.         1.         0.94266653
+  1.         1.                inf 1.         1.        ]
+ [1.         1.         1.         1.         1.         1.
+  0.11179394 1.         1.         1.         1.         1.
+  1.         1.                inf 1.         1.        ]
+ [1.         1.         1.         1.         1.         0.08175802
+  1.         1.         1.         1.         1.         1.
+  1.         1.                inf 1.         0.7558739 ]
+ [1.         1.         1.         1.         1.         0.80564195
+  1.         1.         1.         1.         1.         1.
+  1.         0.5142565         inf 1.         0.36114407]
+ [1.         1.         0.95913315 1.         1.         1.
+  1.         0.99443763 0.06134218 1.         1.         1.
+  1.         1.                inf 1.         1.        ]
+ [1.         0.9944599  1.         1.         1.         1.
+  1.         1.         1.         0.12232143 1.         1.
+  1.         1.                inf 1.         1.        ]
+ [1.         1.         1.         1.         1.         1.
+  1.         0.09785807 1.         1.         1.         1.
+  1.         1.                inf 1.         1.        ]
+ [1.         1.         1.         1.         1.         1.
+  1.         1.         1.         1.         0.11062527 1.
+  1.         1.                inf 1.         1.        ]
+ [1.         1.         1.         1.         1.         1.
+  1.         1.         1.         1.         1.         1.
+  1.         0.32366407        inf 1.         0.82975495]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf 0.09915471        inf        inf]
+ [1.         1.         1.         1.         1.         0.7337195
+  1.         1.         1.         1.         1.         1.
+  1.         0.8319926         inf 1.         0.33111936]
+ [1.         1.         1.         1.         1.         1.
+  1.         1.         1.         1.         1.         1.
+  0.09419155 1.                inf 1.         1.        ]
+ [1.         1.         1.         1.         1.         1.
+  1.         1.         1.         1.         1.         1.
+  1.         1.                inf 0.05497205 1.        ]
+ [1.         1.         1.         1.         1.         1.
+  1.         1.         1.         1.         0.8927261  1.
+  1.         1.                inf 1.         1.        ]]
+2022-12-05 20:15:12.519 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 1
+2022-12-05 20:15:12.520 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:361 - PB duplicate indice: 10
+2022-12-05 20:15:12.520 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:365 - PA nodes with duplicate PB node: [11 17]
+2022-12-05 20:15:12.523 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:377 - Input Matrix after conflict ID 1: 
+[[0.05554777 1.         1.         1.         1.         1.
+  1.         1.         1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [1.         0.11007404 1.         1.         0.9737177  1.
+  1.         1.         1.         0.9887927         inf 0.99921185
+  1.         1.                inf 1.         1.        ]
+ [1.         1.         1.         0.2145676  1.         1.
+  1.         1.         1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [1.         1.         0.04465902 1.         1.         1.
+  1.         1.         0.9579276  1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [1.         0.9542155  1.         1.         0.02527481 1.
+  1.         1.         1.         1.                inf 0.94266653
+  1.         1.                inf 1.         1.        ]
+ [1.         1.         1.         1.         1.         1.
+  0.11179394 1.         1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [1.         1.         1.         1.         1.         0.08175802
+  1.         1.         1.         1.                inf 1.
+  1.         1.                inf 1.         0.7558739 ]
+ [1.         1.         1.         1.         1.         0.80564195
+  1.         1.         1.         1.                inf 1.
+  1.         0.5142565         inf 1.         0.36114407]
+ [1.         1.         0.95913315 1.         1.         1.
+  1.         0.99443763 0.06134218 1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [1.         0.9944599  1.         1.         1.         1.
+  1.         1.         1.         0.12232143        inf 1.
+  1.         1.                inf 1.         1.        ]
+ [1.         1.         1.         1.         1.         1.
+  1.         0.09785807 1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf 0.11062527        inf
+         inf        inf        inf        inf        inf]
+ [1.         1.         1.         1.         1.         1.
+  1.         1.         1.         1.                inf 1.
+  1.         0.32366407        inf 1.         0.82975495]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf 0.09915471        inf        inf]
+ [1.         1.         1.         1.         1.         0.7337195
+  1.         1.         1.         1.                inf 1.
+  1.         0.8319926         inf 1.         0.33111936]
+ [1.         1.         1.         1.         1.         1.
+  1.         1.         1.         1.                inf 1.
+  0.09419155 1.                inf 1.         1.        ]
+ [1.         1.         1.         1.         1.         1.
+  1.         1.         1.         1.                inf 1.
+  1.         1.                inf 0.05497205 1.        ]
+ [1.         1.         1.         1.         1.         1.
+  1.         1.         1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]]
+2022-12-05 20:15:12.524 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 2
+2022-12-05 20:15:12.524 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:361 - PB duplicate indice: 0
+2022-12-05 20:15:12.525 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:365 - PA nodes with duplicate PB node: [ 0 17]
+2022-12-05 20:15:12.528 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:377 - Input Matrix after conflict ID 2: 
+[[0.05554777        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf 0.11007404 1.         1.         0.9737177  1.
+  1.         1.         1.         0.9887927         inf 0.99921185
+  1.         1.                inf 1.         1.        ]
+ [       inf 1.         1.         0.2145676  1.         1.
+  1.         1.         1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf 1.         0.04465902 1.         1.         1.
+  1.         1.         0.9579276  1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf 0.9542155  1.         1.         0.02527481 1.
+  1.         1.         1.         1.                inf 0.94266653
+  1.         1.                inf 1.         1.        ]
+ [       inf 1.         1.         1.         1.         1.
+  0.11179394 1.         1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf 1.         1.         1.         1.         0.08175802
+  1.         1.         1.         1.                inf 1.
+  1.         1.                inf 1.         0.7558739 ]
+ [       inf 1.         1.         1.         1.         0.80564195
+  1.         1.         1.         1.                inf 1.
+  1.         0.5142565         inf 1.         0.36114407]
+ [       inf 1.         0.95913315 1.         1.         1.
+  1.         0.99443763 0.06134218 1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf 0.9944599  1.         1.         1.         1.
+  1.         1.         1.         0.12232143        inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf 1.         1.         1.         1.         1.
+  1.         0.09785807 1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf 0.11062527        inf
+         inf        inf        inf        inf        inf]
+ [       inf 1.         1.         1.         1.         1.
+  1.         1.         1.         1.                inf 1.
+  1.         0.32366407        inf 1.         0.82975495]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf 0.09915471        inf        inf]
+ [       inf 1.         1.         1.         1.         0.7337195
+  1.         1.         1.         1.                inf 1.
+  1.         0.8319926         inf 1.         0.33111936]
+ [       inf 1.         1.         1.         1.         1.
+  1.         1.         1.         1.                inf 1.
+  0.09419155 1.                inf 1.         1.        ]
+ [       inf 1.         1.         1.         1.         1.
+  1.         1.         1.         1.                inf 1.
+  1.         1.                inf 0.05497205 1.        ]
+ [       inf 1.         1.         1.         1.         1.
+  1.         1.         1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]]
+2022-12-05 20:15:12.529 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 3
+2022-12-05 20:15:12.529 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:361 - PB duplicate indice: 1
+2022-12-05 20:15:12.530 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:365 - PA nodes with duplicate PB node: [ 1 17]
+2022-12-05 20:15:12.534 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:377 - Input Matrix after conflict ID 3: 
+[[0.05554777        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf 0.11007404        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf 1.         0.2145676  1.         1.
+  1.         1.         1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf 0.04465902 1.         1.         1.
+  1.         1.         0.9579276  1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf 1.         1.         0.02527481 1.
+  1.         1.         1.         1.                inf 0.94266653
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf 1.         1.         1.         1.
+  0.11179394 1.         1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf 1.         1.         1.         0.08175802
+  1.         1.         1.         1.                inf 1.
+  1.         1.                inf 1.         0.7558739 ]
+ [       inf        inf 1.         1.         1.         0.80564195
+  1.         1.         1.         1.                inf 1.
+  1.         0.5142565         inf 1.         0.36114407]
+ [       inf        inf 0.95913315 1.         1.         1.
+  1.         0.99443763 0.06134218 1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf 1.         1.         1.         1.
+  1.         1.         1.         0.12232143        inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf 1.         1.         1.         1.
+  1.         0.09785807 1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf 0.11062527        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf 1.         1.         1.         1.
+  1.         1.         1.         1.                inf 1.
+  1.         0.32366407        inf 1.         0.82975495]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf 0.09915471        inf        inf]
+ [       inf        inf 1.         1.         1.         0.7337195
+  1.         1.         1.         1.                inf 1.
+  1.         0.8319926         inf 1.         0.33111936]
+ [       inf        inf 1.         1.         1.         1.
+  1.         1.         1.         1.                inf 1.
+  0.09419155 1.                inf 1.         1.        ]
+ [       inf        inf 1.         1.         1.         1.
+  1.         1.         1.         1.                inf 1.
+  1.         1.                inf 0.05497205 1.        ]
+ [       inf        inf 1.         1.         1.         1.
+  1.         1.         1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]]
+2022-12-05 20:15:12.535 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 4
+2022-12-05 20:15:12.535 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:361 - PB duplicate indice: 2
+2022-12-05 20:15:12.536 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:365 - PA nodes with duplicate PB node: [ 3 17]
+2022-12-05 20:15:12.543 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:377 - Input Matrix after conflict ID 4: 
+[[0.05554777        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf 0.11007404        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf 0.2145676  1.         1.
+  1.         1.         1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf 0.04465902        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf 1.         0.02527481 1.
+  1.         1.         1.         1.                inf 0.94266653
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf        inf 1.         1.         1.
+  0.11179394 1.         1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf        inf 1.         1.         0.08175802
+  1.         1.         1.         1.                inf 1.
+  1.         1.                inf 1.         0.7558739 ]
+ [       inf        inf        inf 1.         1.         0.80564195
+  1.         1.         1.         1.                inf 1.
+  1.         0.5142565         inf 1.         0.36114407]
+ [       inf        inf        inf 1.         1.         1.
+  1.         0.99443763 0.06134218 1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf        inf 1.         1.         1.
+  1.         1.         1.         0.12232143        inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf        inf 1.         1.         1.
+  1.         0.09785807 1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf 0.11062527        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf 1.         1.         1.
+  1.         1.         1.         1.                inf 1.
+  1.         0.32366407        inf 1.         0.82975495]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf 0.09915471        inf        inf]
+ [       inf        inf        inf 1.         1.         0.7337195
+  1.         1.         1.         1.                inf 1.
+  1.         0.8319926         inf 1.         0.33111936]
+ [       inf        inf        inf 1.         1.         1.
+  1.         1.         1.         1.                inf 1.
+  0.09419155 1.                inf 1.         1.        ]
+ [       inf        inf        inf 1.         1.         1.
+  1.         1.         1.         1.                inf 1.
+  1.         1.                inf 0.05497205 1.        ]
+ [       inf        inf        inf 1.         1.         1.
+  1.         1.         1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]]
+2022-12-05 20:15:12.544 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 5
+2022-12-05 20:15:12.544 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:361 - PB duplicate indice: 3
+2022-12-05 20:15:12.544 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:365 - PA nodes with duplicate PB node: [ 2 17]
+2022-12-05 20:15:12.551 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:377 - Input Matrix after conflict ID 5: 
+[[0.05554777        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf 0.11007404        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf 0.2145676         inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf 0.04465902        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf 0.02527481 1.
+  1.         1.         1.         1.                inf 0.94266653
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf 1.         1.
+  0.11179394 1.         1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf 1.         0.08175802
+  1.         1.         1.         1.                inf 1.
+  1.         1.                inf 1.         0.7558739 ]
+ [       inf        inf        inf        inf 1.         0.80564195
+  1.         1.         1.         1.                inf 1.
+  1.         0.5142565         inf 1.         0.36114407]
+ [       inf        inf        inf        inf 1.         1.
+  1.         0.99443763 0.06134218 1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf 1.         1.
+  1.         1.         1.         0.12232143        inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf 1.         1.
+  1.         0.09785807 1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf 0.11062527        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf 1.         1.
+  1.         1.         1.         1.                inf 1.
+  1.         0.32366407        inf 1.         0.82975495]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf 0.09915471        inf        inf]
+ [       inf        inf        inf        inf 1.         0.7337195
+  1.         1.         1.         1.                inf 1.
+  1.         0.8319926         inf 1.         0.33111936]
+ [       inf        inf        inf        inf 1.         1.
+  1.         1.         1.         1.                inf 1.
+  0.09419155 1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf 1.         1.
+  1.         1.         1.         1.                inf 1.
+  1.         1.                inf 0.05497205 1.        ]
+ [       inf        inf        inf        inf 1.         1.
+  1.         1.         1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]]
+2022-12-05 20:15:12.551 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 6
+2022-12-05 20:15:12.552 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:361 - PB duplicate indice: 4
+2022-12-05 20:15:12.552 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:365 - PA nodes with duplicate PB node: [ 4 17]
+2022-12-05 20:15:12.558 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:377 - Input Matrix after conflict ID 6: 
+[[0.05554777        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf 0.11007404        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf 0.2145676         inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf 0.04465902        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf 0.02527481        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf 1.
+  0.11179394 1.         1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf        inf 0.08175802
+  1.         1.         1.         1.                inf 1.
+  1.         1.                inf 1.         0.7558739 ]
+ [       inf        inf        inf        inf        inf 0.80564195
+  1.         1.         1.         1.                inf 1.
+  1.         0.5142565         inf 1.         0.36114407]
+ [       inf        inf        inf        inf        inf 1.
+  1.         0.99443763 0.06134218 1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf        inf 1.
+  1.         1.         1.         0.12232143        inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf        inf 1.
+  1.         0.09785807 1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf 0.11062527        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf 1.
+  1.         1.         1.         1.                inf 1.
+  1.         0.32366407        inf 1.         0.82975495]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf 0.09915471        inf        inf]
+ [       inf        inf        inf        inf        inf 0.7337195
+  1.         1.         1.         1.                inf 1.
+  1.         0.8319926         inf 1.         0.33111936]
+ [       inf        inf        inf        inf        inf 1.
+  1.         1.         1.         1.                inf 1.
+  0.09419155 1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf        inf 1.
+  1.         1.         1.         1.                inf 1.
+  1.         1.                inf 0.05497205 1.        ]
+ [       inf        inf        inf        inf        inf 1.
+  1.         1.         1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]]
+2022-12-05 20:15:12.559 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 7
+2022-12-05 20:15:12.560 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:361 - PB duplicate indice: 5
+2022-12-05 20:15:12.560 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:365 - PA nodes with duplicate PB node: [ 6 17]
+2022-12-05 20:15:12.565 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:377 - Input Matrix after conflict ID 7: 
+[[0.05554777        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf 0.11007404        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf 0.2145676         inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf 0.04465902        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf 0.02527481        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+  0.11179394 1.         1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf        inf 0.08175802
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+  1.         1.         1.         1.                inf 1.
+  1.         0.5142565         inf 1.         0.36114407]
+ [       inf        inf        inf        inf        inf        inf
+  1.         0.99443763 0.06134218 1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf        inf        inf
+  1.         1.         1.         0.12232143        inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf        inf        inf
+  1.         0.09785807 1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf 0.11062527        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+  1.         1.         1.         1.                inf 1.
+  1.         0.32366407        inf 1.         0.82975495]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf 0.09915471        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+  1.         1.         1.         1.                inf 1.
+  1.         0.8319926         inf 1.         0.33111936]
+ [       inf        inf        inf        inf        inf        inf
+  1.         1.         1.         1.                inf 1.
+  0.09419155 1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf        inf        inf
+  1.         1.         1.         1.                inf 1.
+  1.         1.                inf 0.05497205 1.        ]
+ [       inf        inf        inf        inf        inf        inf
+  1.         1.         1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]]
+2022-12-05 20:15:12.566 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 8
+2022-12-05 20:15:12.566 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:361 - PB duplicate indice: 6
+2022-12-05 20:15:12.567 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:365 - PA nodes with duplicate PB node: [ 5 17]
+2022-12-05 20:15:12.574 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:377 - Input Matrix after conflict ID 8: 
+[[0.05554777        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf 0.11007404        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf 0.2145676         inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf 0.04465902        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf 0.02527481        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+  0.11179394        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf 0.08175802
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf 1.         1.         1.                inf 1.
+  1.         0.5142565         inf 1.         0.36114407]
+ [       inf        inf        inf        inf        inf        inf
+         inf 0.99443763 0.06134218 1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf        inf        inf
+         inf 1.         1.         0.12232143        inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf        inf        inf
+         inf 0.09785807 1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf 0.11062527        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf 1.         1.         1.                inf 1.
+  1.         0.32366407        inf 1.         0.82975495]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf 0.09915471        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf 1.         1.         1.                inf 1.
+  1.         0.8319926         inf 1.         0.33111936]
+ [       inf        inf        inf        inf        inf        inf
+         inf 1.         1.         1.                inf 1.
+  0.09419155 1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf        inf        inf
+         inf 1.         1.         1.                inf 1.
+  1.         1.                inf 0.05497205 1.        ]
+ [       inf        inf        inf        inf        inf        inf
+         inf 1.         1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]]
+2022-12-05 20:15:12.574 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 9
+2022-12-05 20:15:12.575 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:361 - PB duplicate indice: 7
+2022-12-05 20:15:12.576 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:365 - PA nodes with duplicate PB node: [10 17]
+2022-12-05 20:15:12.582 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:377 - Input Matrix after conflict ID 9: 
+[[0.05554777        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf 0.11007404        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf 0.2145676         inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf 0.04465902        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf 0.02527481        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+  0.11179394        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf 0.08175802
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf 1.         1.                inf 1.
+  1.         0.5142565         inf 1.         0.36114407]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf 0.06134218 1.                inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf 1.         0.12232143        inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf        inf        inf
+         inf 0.09785807        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf 0.11062527        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf 1.         1.                inf 1.
+  1.         0.32366407        inf 1.         0.82975495]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf 0.09915471        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf 1.         1.                inf 1.
+  1.         0.8319926         inf 1.         0.33111936]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf 1.         1.                inf 1.
+  0.09419155 1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf 1.         1.                inf 1.
+  1.         1.                inf 0.05497205 1.        ]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf 1.         1.                inf 1.
+  1.         1.                inf 1.         1.        ]]
+2022-12-05 20:15:12.583 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 10
+2022-12-05 20:15:12.583 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:361 - PB duplicate indice: 8
+2022-12-05 20:15:12.584 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:365 - PA nodes with duplicate PB node: [ 8 17]
+2022-12-05 20:15:12.591 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:377 - Input Matrix after conflict ID 10: 
+[[0.05554777        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf 0.11007404        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf 0.2145676         inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf 0.04465902        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf 0.02527481        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+  0.11179394        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf 0.08175802
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf 1.                inf 1.
+  1.         0.5142565         inf 1.         0.36114407]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf 0.06134218        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf 0.12232143        inf 1.
+  1.         1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf        inf        inf
+         inf 0.09785807        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf 0.11062527        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf 1.                inf 1.
+  1.         0.32366407        inf 1.         0.82975495]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf 0.09915471        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf 1.                inf 1.
+  1.         0.8319926         inf 1.         0.33111936]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf 1.                inf 1.
+  0.09419155 1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf 1.                inf 1.
+  1.         1.                inf 0.05497205 1.        ]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf 1.                inf 1.
+  1.         1.                inf 1.         1.        ]]
+2022-12-05 20:15:12.591 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 11
+2022-12-05 20:15:12.591 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:361 - PB duplicate indice: 9
+2022-12-05 20:15:12.592 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:365 - PA nodes with duplicate PB node: [ 9 17]
+2022-12-05 20:15:12.597 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:377 - Input Matrix after conflict ID 11: 
+[[0.05554777        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf 0.11007404        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf 0.2145676         inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf 0.04465902        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf 0.02527481        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+  0.11179394        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf 0.08175802
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf 1.
+  1.         0.5142565         inf 1.         0.36114407]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf 0.06134218        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf 0.12232143        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf 0.09785807        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf 0.11062527        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf 1.
+  1.         0.32366407        inf 1.         0.82975495]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf 0.09915471        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf 1.
+  1.         0.8319926         inf 1.         0.33111936]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf 1.
+  0.09419155 1.                inf 1.         1.        ]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf 1.
+  1.         1.                inf 0.05497205 1.        ]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf 1.
+  1.         1.                inf 1.         1.        ]]
+2022-12-05 20:15:12.598 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 12
+2022-12-05 20:15:12.598 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:361 - PB duplicate indice: 16
+2022-12-05 20:15:12.598 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:365 - PA nodes with duplicate PB node: [ 7 14]
+2022-12-05 20:15:12.605 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:377 - Input Matrix after conflict ID 12: 
+[[0.05554777        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf 0.11007404        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf 0.2145676         inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf 0.04465902        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf 0.02527481        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+  0.11179394        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf 0.08175802
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf 1.
+  1.         0.5142565         inf 1.                inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf 0.06134218        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf 0.12232143        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf 0.09785807        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf 0.11062527        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf 1.
+  1.         0.32366407        inf 1.                inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf 0.09915471        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf 0.33111936]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf 1.
+  0.09419155 1.                inf 1.                inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf 1.
+  1.         1.                inf 0.05497205        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf 1.
+  1.         1.                inf 1.                inf]]
+2022-12-05 20:15:12.617 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 13
+2022-12-05 20:15:12.617 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:361 - PB duplicate indice: 13
+2022-12-05 20:15:12.618 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:365 - PA nodes with duplicate PB node: [ 7 12]
+2022-12-05 20:15:12.625 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:377 - Input Matrix after conflict ID 13: 
+[[0.05554777        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf 0.11007404        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf 0.2145676         inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf 0.04465902        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf 0.02527481        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+  0.11179394        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf 0.08175802
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf 1.
+  1.                inf        inf 1.                inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf 0.06134218        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf 0.12232143        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf 0.09785807        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf 0.11062527        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf 0.32366407        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf 0.09915471        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf 0.33111936]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf 1.
+  0.09419155        inf        inf 1.                inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf 1.
+  1.                inf        inf 0.05497205        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf 1.
+  1.                inf        inf 1.                inf]]
+2022-12-05 20:15:12.627 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 14
+2022-12-05 20:15:12.627 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:361 - PB duplicate indice: 11
+2022-12-05 20:15:12.627 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:365 - PA nodes with duplicate PB node: [ 7 17]
+2022-12-05 20:15:12.633 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:377 - Input Matrix after conflict ID 14: 
+[[0.05554777        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf 0.11007404        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf 0.2145676         inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf 0.04465902        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf 0.02527481        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+  0.11179394        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf 0.08175802
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+  1.                inf        inf 1.                inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf 0.06134218        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf 0.12232143        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf 0.09785807        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf 0.11062527        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf 0.32366407        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf 0.09915471        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf 0.33111936]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+  0.09419155        inf        inf 1.                inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+  1.                inf        inf 0.05497205        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf 1.
+         inf        inf        inf        inf        inf]]
+2022-12-05 20:15:12.634 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 15
+2022-12-05 20:15:12.634 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:361 - PB duplicate indice: 12
+2022-12-05 20:15:12.634 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:365 - PA nodes with duplicate PB node: [ 7 15]
+2022-12-05 20:15:12.638 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:377 - Input Matrix after conflict ID 15: 
+[[0.05554777        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf 0.11007404        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf 0.2145676         inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf 0.04465902        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf 0.02527481        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+  0.11179394        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf 0.08175802
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf 1.                inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf 0.06134218        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf 0.12232143        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf 0.09785807        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf 0.11062527        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf 0.32366407        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf 0.09915471        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf 0.33111936]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+  0.09419155        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf 0.05497205        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf 1.
+         inf        inf        inf        inf        inf]]
+2022-12-05 20:15:12.639 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 16
+2022-12-05 20:15:12.639 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:361 - PB duplicate indice: 15
+2022-12-05 20:15:12.639 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:365 - PA nodes with duplicate PB node: [ 7 16]
+2022-12-05 20:15:12.644 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:377 - Input Matrix after conflict ID 16: 
+[[0.05554777        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf 0.11007404        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf 0.2145676         inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf 0.04465902        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf 0.02527481        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+  0.11179394        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf 0.08175802
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf 0.06134218        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf 0.12232143        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf 0.09785807        inf        inf        inf        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf 0.11062527        inf
+         inf        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf 0.32366407        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf 0.09915471        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf 0.33111936]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+  0.09419155        inf        inf        inf        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf        inf
+         inf        inf        inf 0.05497205        inf]
+ [       inf        inf        inf        inf        inf        inf
+         inf        inf        inf        inf        inf 1.
+         inf        inf        inf        inf        inf]]
+2022-12-05 20:15:12.645 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 17
+2022-12-05 20:15:12.645 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:351 - we have paired 17 nodes from partition A to partition B. As such, we have reached our limit of pairs since minimum dim of matrix is 17
+2022-12-05 20:15:13.247 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:321 - input matrix: 
+[[1. 1. 1.]]
+2022-12-05 20:15:13.247 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:322 - input matrix shape: 
+(1, 3)
+2022-12-05 20:15:13.824 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:321 - input matrix: 
+[[1.         1.        ]
+ [1.         0.7617054 ]
+ [1.         0.16054016]]
+2022-12-05 20:15:13.824 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:322 - input matrix shape: 
+(3, 2)
+2022-12-05 20:15:13.824 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 0
+2022-12-05 20:15:13.824 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:361 - PB duplicate indice: 1
+2022-12-05 20:15:13.825 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:365 - PA nodes with duplicate PB node: [1 2]
+2022-12-05 20:15:13.825 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:377 - Input Matrix after conflict ID 0: 
+[[1.                inf]
+ [1.                inf]
+ [       inf 0.16054016]]
+2022-12-05 20:15:13.825 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 1
+2022-12-05 20:15:13.826 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:361 - PB duplicate indice: 0
+2022-12-05 20:15:13.826 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:365 - PA nodes with duplicate PB node: [0 1]
+2022-12-05 20:15:13.826 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:377 - Input Matrix after conflict ID 1: 
+[[1.                inf]
+ [       inf        inf]
+ [       inf 0.16054016]]
+2022-12-05 20:15:13.827 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 2
+2022-12-05 20:15:13.827 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:351 - we have paired 2 nodes from partition A to partition B. As such, we have reached our limit of pairs since minimum dim of matrix is 2
+2022-12-05 20:15:14.401 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:321 - input matrix: 
+[[1.         1.        ]
+ [1.         1.        ]
+ [0.11607796 1.        ]]
+2022-12-05 20:15:14.401 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:322 - input matrix shape: 
+(3, 2)
+2022-12-05 20:15:14.401 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 0
+2022-12-05 20:15:14.401 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:361 - PB duplicate indice: 0
+2022-12-05 20:15:14.401 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:365 - PA nodes with duplicate PB node: [0 1 2]
+2022-12-05 20:15:14.402 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:377 - Input Matrix after conflict ID 0: 
+[[       inf 1.        ]
+ [       inf 1.        ]
+ [0.11607796        inf]]
+2022-12-05 20:15:14.402 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 1
+2022-12-05 20:15:14.402 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:361 - PB duplicate indice: 1
+2022-12-05 20:15:14.403 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:365 - PA nodes with duplicate PB node: [0 1]
+2022-12-05 20:15:14.403 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:377 - Input Matrix after conflict ID 1: 
+[[       inf 1.        ]
+ [       inf        inf]
+ [0.11607796        inf]]
+2022-12-05 20:15:14.404 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 2
+2022-12-05 20:15:14.404 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:351 - we have paired 2 nodes from partition A to partition B. As such, we have reached our limit of pairs since minimum dim of matrix is 2
+2022-12-05 20:15:14.977 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:321 - input matrix: 
+[[1.]
+ [1.]]
+2022-12-05 20:15:14.977 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:322 - input matrix shape: 
+(2, 1)
+2022-12-05 20:15:14.977 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 0
+2022-12-05 20:15:14.977 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:361 - PB duplicate indice: 0
+2022-12-05 20:15:14.978 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:365 - PA nodes with duplicate PB node: [0 1]
+2022-12-05 20:15:14.978 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:377 - Input Matrix after conflict ID 0: 
+[[ 1.]
+ [inf]]
+2022-12-05 20:15:14.978 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 1
+2022-12-05 20:15:14.978 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:351 - we have paired 1 nodes from partition A to partition B. As such, we have reached our limit of pairs since minimum dim of matrix is 1
+2022-12-05 20:15:15.529 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:321 - input matrix: 
+[[1.        ]
+ [1.        ]
+ [0.02224886]]
+2022-12-05 20:15:15.529 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:322 - input matrix shape: 
+(3, 1)
+2022-12-05 20:15:15.529 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 0
+2022-12-05 20:15:15.530 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:361 - PB duplicate indice: 0
+2022-12-05 20:15:15.530 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:365 - PA nodes with duplicate PB node: [0 1 2]
+2022-12-05 20:15:15.530 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:377 - Input Matrix after conflict ID 0: 
+[[       inf]
+ [       inf]
+ [0.02224886]]
+2022-12-05 20:15:15.530 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 1
+2022-12-05 20:15:15.530 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:351 - we have paired 1 nodes from partition A to partition B. As such, we have reached our limit of pairs since minimum dim of matrix is 1
+2022-12-05 20:15:16.652 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:321 - input matrix: 
+[[1.        ]
+ [1.        ]
+ [0.07502198]]
+2022-12-05 20:15:16.652 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:322 - input matrix shape: 
+(3, 1)
+2022-12-05 20:15:16.659 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 0
+2022-12-05 20:15:16.659 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:361 - PB duplicate indice: 0
+2022-12-05 20:15:16.660 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:365 - PA nodes with duplicate PB node: [0 1 2]
+2022-12-05 20:15:16.660 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:377 - Input Matrix after conflict ID 0: 
+[[       inf]
+ [       inf]
+ [0.07502198]]
+2022-12-05 20:15:16.661 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:346 - conflict ID: 1
+2022-12-05 20:15:16.661 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:351 - we have paired 1 nodes from partition A to partition B. As such, we have reached our limit of pairs since minimum dim of matrix is 1
+2022-12-05 20:15:17.769 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:321 - input matrix: 
+[]
+2022-12-05 20:15:17.770 | INFO     | spatial_bias.spatial_tracking_v2:spatial_bias_assignment:322 - input matrix shape: 
+(2, 0)

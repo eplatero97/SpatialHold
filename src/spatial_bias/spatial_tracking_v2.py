@@ -8,6 +8,9 @@ from random import randint
 import sys
 import os
 from  loguru import logger 
+#logger.level("WARNING")
+#logger.add("spatial_hold_info", level="INFO")
+
 
 # need to run `python setup.py install_lib` @ root of project for below to import
 # from mot_utils import max_trackID
@@ -316,8 +319,11 @@ def spatial_bias_assignment(pair_dists: np.ndarray) -> np.ndarray:
     :terminilogy PA: Partition A (row indices)
     :terminology PB: Partition B (col indices)
     """
-    logger.info(f"input matrix: \n{pair_dists}")
-    logger.info(f"input matrix shape: \n{pair_dists.shape}")
+#    logger.info(f"input matrix: \n{pair_dists}")
+#    logger.info(f"input matrix shape: \n{pair_dists.shape}")
+
+    if not np.any(pair_dists):
+        return np.array([]) # return an empty list in this case
     
     # calculate min dimension
     n, m = pair_dists.shape
@@ -331,7 +337,11 @@ def spatial_bias_assignment(pair_dists: np.ndarray) -> np.ndarray:
 
     # attain "top pick" currID per prevID (the currID closest to prevID)
     # for every node in PA, attain PB indice with minimum distance w.r.t. PA node (e.g., `PA_min_PB[1]==2 # True` means that node 2 of PB minimizes the distance w.r.t. node 1 in PA)
-    PA_min_PB = np.argmin(pair_dists, axis = 1) # n vector
+    try:
+        PA_min_PB = np.argmin(pair_dists, axis = 1) # n vector
+    except ValueError: # attempt to get argmin of an empty sequence
+        #print(f'pair_dists: {pair_dists}') # [] (happening at iteration 10)
+        raise 
     
     unique_PA_min_PB, unique_PA_min_PB_counts = np.unique(PA_min_PB, return_counts= True) # unique_PA_min_PB_counts only needed if a "conflict" arises
     PA_min_PB_picks_are_unique = (len(PA_min_PB) == len(unique_PA_min_PB)) # did each node `i` in PA have a unique node `j` that minimized its distance (`PA_min_PB[i]==j`)?
@@ -341,12 +351,12 @@ def spatial_bias_assignment(pair_dists: np.ndarray) -> np.ndarray:
     while theres_conflict:
         
         n_conflicts += 1
-        logger.info(f"conflict ID: {n_conflicts}")
+#        logger.info(f"conflict ID: {n_conflicts}")
         
         # if we have paired up all possible pairs, then we have reached our limit! We have to stop the draft now
         # this will ALWAYS happen if there are more prevIDs than currIDs (not everyone can receive a pair!)
         if n_conflicts == min_dim:
-            logger.info(f"we have paired {min_dim} nodes from partition A to partition B. As such, we have reached our limit of pairs since minimum dim of matrix is {min_dim}")
+#            logger.info(f"we have paired {min_dim} nodes from partition A to partition B. As such, we have reached our limit of pairs since minimum dim of matrix is {min_dim}")
             theres_conflict = False
             break 
         
@@ -356,11 +366,11 @@ def spatial_bias_assignment(pair_dists: np.ndarray) -> np.ndarray:
         
         # pick first duplicate node in PB
         zeroth_duplicate_PB: np.int = PB_indice_duplicates[0]
-        logger.info(f"PB duplicate indice: {zeroth_duplicate_PB}")
+#        logger.info(f"PB duplicate indice: {zeroth_duplicate_PB}")
 
         # find specific PA nodes that are "fighting" over duplicate node in PB
         conflicted_prevIDs = np.flatnonzero(PA_min_PB == zeroth_duplicate_PB) # vals represents currIDs
-        logger.info(f"PA nodes with duplicate PB node: {conflicted_prevIDs}")
+#        logger.info(f"PA nodes with duplicate PB node: {conflicted_prevIDs}")
 
         # find which prevID the currID "prefers" (the prevID that minimizes the distance with currID)
         zeroth_duplicate_PB_min_PA: np.int = resolve_conflict(PB_ranks_PA, zeroth_duplicate_PB, conflicted_prevIDs) # value represents PA node that min. distance w.r.t. duplicate node PB
@@ -372,7 +382,7 @@ def spatial_bias_assignment(pair_dists: np.ndarray) -> np.ndarray:
         pair_dists[zeroth_duplicate_PB_min_PA, :] = np.Inf # make entire row associated with node PA equal inf
         pair_dists[:, zeroth_duplicate_PB] = np.Inf # make entire col associated with node PB equal inf
         pair_dists[zeroth_duplicate_PB_min_PA, zeroth_duplicate_PB] = pair_dist # insert previous value of selected pair
-        logger.info(f"Input Matrix after conflict ID {n_conflicts}: \n{pair_dists}")
+#        logger.info(f"Input Matrix after conflict ID {n_conflicts}: \n{pair_dists}")
 
 
         '''
@@ -1147,13 +1157,13 @@ class spatial_hold_v1:
             # are any of the newly assigned tracklets actually from previous tracklets?
             selected_lostIDs, selected_currIDs = proximity(new_fp, lost_preds, take_max = take_max)
             if len(selected_lostIDs) > 0:
-                print(f"frame_idx: {i}")
-                print(f"current frame predictions b4 re-linking: \n{frame_preds}")
-                print(f"IDs of current frame b4 re-linking: \n{currIDs}")
-                print(f"current frame predictions with new tracklets: \n{new_fp}")
-                print(f"lost_preds b4 removal of found tracklets \n{lost_preds}")
-                print(f"selected_lostIDs relative to preds with lost tracklets: {selected_lostIDs}")
-                print(f"selected_currIDs relative to preds with new tracklets:  {selected_currIDs}")
+#                print(f"frame_idx: {i}")
+#                print(f"current frame predictions b4 re-linking: \n{frame_preds}")
+#                print(f"IDs of current frame b4 re-linking: \n{currIDs}")
+#                print(f"current frame predictions with new tracklets: \n{new_fp}")
+#                print(f"lost_preds b4 removal of found tracklets \n{lost_preds}")
+#                print(f"selected_lostIDs relative to preds with lost tracklets: {selected_lostIDs}")
+#                print(f"selected_currIDs relative to preds with new tracklets:  {selected_currIDs}")
 
 
                 # safety check: ensure each frame contains no duplicate tracklets
@@ -1162,7 +1172,7 @@ class spatial_hold_v1:
                 # for each pair of lost and current ID that need to be re-linked, apply this re-linking to all contigous subsequent frames
                 modify_ahead(self.frame_splits, new_fp, lost_preds, i, selected_lostIDs, selected_currIDs) # modifies elements of `frame_splits` inplace
 
-                print(f"current frame preds AFTER re-linking: \n{frame_preds}")
+#                print(f"current frame preds AFTER re-linking: \n{frame_preds}")
 
                 # safety check: ensure each frame contains no duplicate tracklets
                 assert_unique_tracklets_per_frame(self.frame_splits)
@@ -1170,9 +1180,9 @@ class spatial_hold_v1:
                 # delete entry from lost_preds
                 self.lost_preds = rm_found_tracklets(lost_preds, selected_lostIDs)
 
-                print("lost_preds after removal of found tracklets")
-                print(self.lost_preds)
-                print("-----------------------")
+#                print("lost_preds after removal of found tracklets")
+#                print(self.lost_preds)
+#                print("-----------------------")
 
                 # re-update necessary variables since `frame_splits` elements were modified inplace
                 # re-compute tracklet IDs of current frame predictions since we modified `frame_preds` inplace during `modify_ahead()` call

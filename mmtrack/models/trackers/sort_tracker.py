@@ -2,6 +2,7 @@
 import numpy as np
 import torch
 from mmcv.runner import force_fp32
+from spatial_bias.spatial_tracking_v2 import * # imports `spatial_bias_assignment` function
 from mmdet.core import bbox_overlaps
 from motmetrics.lap import linear_sum_assignment
 
@@ -9,6 +10,7 @@ from mmtrack.core import imrenormalize
 from mmtrack.core.bbox import bbox_xyxy_to_cxcyah
 from mmtrack.models import TRACKERS
 from .base_tracker import BaseTracker
+from time import time 
 
 
 @TRACKERS.register_module()
@@ -34,6 +36,8 @@ class SortTracker(BaseTracker):
             a track. Defaults to 3.
         init_cfg (dict or list[dict], optional): Initialization config dict.
             Defaults to None.
+        association (str): specify what association algorithm to use ("hungarian" || "spatial_hold")
+            Defaults to "hungarian".
     """
 
     def __init__(self,
@@ -46,12 +50,16 @@ class SortTracker(BaseTracker):
                  match_iou_thr=0.7,
                  num_tentatives=3,
                  init_cfg=None,
+                 embed_association="hungarian", # or "spatial_hold"
+                 track_association="hungarian", # or "spatial_hold"
                  **kwargs):
         super().__init__(init_cfg=init_cfg, **kwargs)
         self.obj_score_thr = obj_score_thr
         self.reid = reid
         self.match_iou_thr = match_iou_thr
         self.num_tentatives = num_tentatives
+        self.embed_association = embed_association
+        self.track_association = track_association
 
     @property
     def confirmed_ids(self):
@@ -173,8 +181,17 @@ class SortTracker(BaseTracker):
 
                     valid_inds = [list(self.ids).index(_) for _ in active_ids]
                     reid_dists[~np.isfinite(costs[valid_inds, :])] = np.nan
-
-                    row, col = linear_sum_assignment(reid_dists)
+                    # Associate track IDs on embedding component
+                    start_embed_time = time()
+                    if self.embed_association == "hungarian":
+                        row, col = linear_sum_assignment(reid_dists)
+                    elif self.embed_association == "spatial_hold":
+                        col = spatial_bias_assignment(reid_dists).tolist()
+                        row = list(range(len(col)))
+                    else:
+                        raise f"association alg {self.association} has not been implemented"
+                    delta_embed_time = time() - start_embed_time
+                    #print(f'delta_embed_time: {delta_embed_time}')
                     for r, c in zip(row, col):
                         dist = reid_dists[r, c]
                         if not np.isfinite(dist):
@@ -192,7 +209,14 @@ class SortTracker(BaseTracker):
                 ious = bbox_overlaps(
                     track_bboxes, bboxes[active_dets][:, :-1]).cpu().numpy()
                 dists = 1 - ious
-                row, col = linear_sum_assignment(dists)
+                start_track_time = time()
+                if self.track_association == "hungarian":
+                    row, col = linear_sum_assignment(dists)
+                elif self.track_association == "spatial_hold":
+                    col = spatial_bias_assignment(dists).tolist()
+                    row = list(range(len(col)))
+                delta_track_time = time() - start_track_time
+                #print(f'delta_track_time: {delta_track_time}')
                 for r, c in zip(row, col):
                     dist = dists[r, c]
                     if dist < 1 - self.match_iou_thr:
