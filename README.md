@@ -45,7 +45,7 @@ This repository contains the configuration files to evaluate SORT and DeepSORT u
 ## Findings :mag:
 From this study, we found that there are no significant differences between using the Hungarian algorithm or Spatial Hold when making bounding box detections.
 
-![min_metrics](https://github.com/eplatero97/SpatialHold/blob/master/assets/sort_min_metrics.png)
+![min_metrics](https://github.com/eplatero97/SpatialHold/blob/main/assets/sort_min_metrics.png)
 
 ## Installation :floppy_disk:
 Once you install mmtracking, run below to install Spatial Hold:
