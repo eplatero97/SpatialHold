@@ -47,6 +47,8 @@ From this study, we found that there are no significant differences between usin
 
 ![min_metrics](https://github.com/eplatero97/SpatialHold/blob/main/assets/sort_min_metrics.png)
 
+To read full report, please read `Spatial_Hold_Project.pdf`.
+
 ## Installation :floppy_disk:
 Once you install mmtracking, run below to install Spatial Hold:
 ```bash
